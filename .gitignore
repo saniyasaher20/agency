@@ -1,3 +1,2 @@
-/node_modules
-/scss
-/assets/img/unused
+node_modules
+assets/img/unused
