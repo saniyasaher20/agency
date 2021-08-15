@@ -1,0 +1,30 @@
+{
+  "name": "agency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-purgecss": "^3.0.0",
+    "postcss-modules": "^4.2.2",
+    "uncss": "^0.17.3"
+  },
+  "devDependencies": {
+    "purgecss": "^4.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saniyasaher20/agency.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saniyasaher20/agency/issues"
+  },
+  "homepage": "https://github.com/saniyasaher20/agency#readme"
+}

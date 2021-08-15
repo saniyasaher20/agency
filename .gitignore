@@ -1,7 +1,7 @@
 node_modules
 assets/img/unused
-assets/css
-assets/js
-assets/scss
-UnCss.docx
+assets/css/custom.css
 ~$UnCss.docx
+UnCss.docx
+assets/min
+assets/scss
