@@ -16,7 +16,13 @@
         <!-- ------------------------------- Navbar -------------------------------- -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand ago-logo" href="#"><img class="img-fluid" src="assets/img/AGO@1x.png" alt="AGO logo"></a>
+                <a class="navbar-brand ago-logo" href="#">
+                    ​<picture>
+                        <source srcset="assets/img/AGO-100w.webp 100w" width="80px" media="(max-width: 768px)" type="image/webp">
+                        <source srcset="assets/img/AGO-138w.webp 138w" width="138px" media="(min-width: 769px)" type="image/webp">
+                        <img class="img-fluid" src="assets/img/AGO.png" width="138px" alt="AGO logo">
+                    </picture>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -48,7 +54,12 @@
             <div class="row">
                 <div class="col hero__cloud__col position-absolute">
                     <!-- hero__cloud z-index:1 -->
-                    <img src="assets/img/pngkey.com-colour-smoke-png-323818.png" class="img-fluid hero__cloud" alt="">
+
+                    <picture>
+                        <source srcset="assets/img/cloud-400w.webp" width="400px" media="(max-width: 768px)" type="image/webp">
+                        <source srcset="assets/img/cloud.webp" width="1030px" media="(min-width: 769px)" type="image/webp">
+                        <img src="assets/img/cloud.png" class="img-fluid hero__cloud" alt="Floating Cloud" />
+                    </picture>
                 </div>
             </div>
 

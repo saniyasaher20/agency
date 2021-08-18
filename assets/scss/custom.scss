@@ -138,19 +138,7 @@ body {
 		opacity: 1;
 	}
 }
-section.hero {
-	&::before {
-		content: '';
-		position: absolute;
-		background: url("../img/Mask1.png") no-repeat right center;
-		background-size: contain;
-		height: 100%;
-		width: 100vw;
-		top: 0;
-		visibility: hidden;
-		z-index: -1;
-	}
-}
+
 .hero__title {
 	position: relative;
 	font-weight: 900;
@@ -171,18 +159,6 @@ section.hero {
 	.col.boxShadowHover {
 		border-radius: 4px;
 	}
-	&::before {
-		content: '';
-		position: absolute;
-		background: url("../img/Mask2.png") no-repeat left center;
-		background-size: contain;
-		height: 50%;
-		width: 100vw;
-		top: 0;
-		left: -5%;
-		visibility: hidden;
-		z-index: -1;
-	}
 }
 
 /* ---------------------------------- Works --------------------------------- */
@@ -198,45 +174,96 @@ section.cta {
   @include margin-top(15em);
 }
 .cta {
-	background: url("../img/mountains-footer.png") no-repeat bottom center;
-	background-size: cover;
-	height: 43em;
+	background: url("../img/mountains-footer-576w.webp") no-repeat bottom center;
+	background-size: contain;
+	height: 24em;
 	position: relative;
 	&:not(img) {
 		z-index: 1;
 	}
 }
 
-/* ------------------------------ Media Queries ----------------------------- */
+// sm: >= 576px
+@media (min-width: 576px) {
+	.cta {
+		background: url("../img/mountains-footer-768w.webp") no-repeat bottom center;
+		background-size: contain;
+		height: 30em;
+		}
+}
+// md: >= 768px
+@media (min-width: 768px) {
+	.cta {
+		background: url("../img/mountains-footer-992w.webp") no-repeat bottom center;
+		background-size: contain;
+		height: 35em;
+	}
+}
+// upto lg: >=992px
+@media (min-width: 992px) {
+	.cta {
+		background: url("../img/mountains-footer-1930w.webp") no-repeat bottom center;
+		background-size: cover;
+		height: 43em;
+	}
+}
 
-@media (min-width: 1200px) {
+/* ------------------------------ Media Queries ----------------------------- */
+// Load img only after md screens
+@media (min-width: 768px) {
 	section.hero {
 		&::before {
-			transform: translate(-5%, 25%);
-			visibility: visible;
+			content: '';
+			position: absolute;
+			background: url("../img/Mask1.webp") no-repeat right center;
+			background-size: contain;
+			height: 100%;
+			width: 100vw;
+			top: 0;
+			z-index: -1;
 		}
 	}
 	.features {
 		&::before {
-			transform: translate(-3%, 85%);
-			visibility: visible;
+			content: '';
+			position: absolute;
+			background: url("../img/Mask2.webp") no-repeat left center;
+			background-size: contain;
+			height: 50%;
+			width: 100vw;
+			top: 0;
+			left: -5%;
+			z-index: -1;
 		}
 	}
 }
+
 @media (min-width: 768px) and (max-width: 1199px) {
 	section.hero {
 		&::before {
 			transform: translate(-3%, 30%);
-			visibility: visible;
 		}
 	}
 	.features {
 		&::before {
 			transform: translate(0%, 80%);
-			visibility: visible;
 		}
 	}
 }
+
+@media (min-width: 1200px) {
+	section.hero {
+		&::before {
+			transform: translate(-5%, 25%);
+		}
+	}
+	.features {
+		&::before {
+			transform: translate(-3%, 85%);
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.hero__cloud__col {
 		top: 18%;
@@ -250,7 +277,7 @@ section.cta {
 			top: 10%;
 			height: 100%;
 			width: 100vw;
-			background: url("../img/WORKS.png") no-repeat right top;
+			background: url("../img/WORKS.webp") no-repeat right top;
 			z-index: -1;
 		}
 	}
@@ -260,7 +287,7 @@ section.cta {
 			position: absolute;
 			top: -40%;
 			right: -20%;
-			background: url("../img/footer-blue-bar.png") no-repeat right center;
+			background: url("../img/footer-blue-bar.webp") no-repeat right center;
 			background-size: contain;
 			height: 100%;
 			width: 100%;
