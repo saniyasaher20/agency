@@ -10293,6 +10293,10 @@ fieldset:disabled .btn {
   font-weight: 400;
 }
 
+.nav-link.btn-outline-primary:hover {
+  color: #fff !important;
+}
+
 p {
   font-size: .875rem;
 }
